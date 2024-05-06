@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Based Brad</title>
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @font-face {
+        font-family: menu;
+        src: url(Sunny\ Spells\ Basic.ttf);
+    }
+    .menu{
+        font-family: menu;
+    }
+    @font-face {
+        font-family: head;
+        src: url(/Cold\ Warm.otf);
+    }
+    .head{
+        font-family: head;
+    }
+    @font-face {
+        font-family: texts;
+        src: url(/Sunny\ Spells\ Basic.ttf);
+    }
+    .texts{
+        font-family: texts;
+        letter-spacing: 1px;
+        
+    }
+    @font-face {
+        font-family: sub;
+        src: url(/meme.ttf)
+    }
+    .sub{
+        font-family: sub;
+    }
+</style>
+<body class="bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
+        <section class="bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
+            <nav class=" md:hidden bg-transparent">
+                <div class="max-w-7xl mx-auto px-4">
+                    <div class="flex justify-between h-16">
+                        <!-- Logo -->
+                        <div class="flex-shrink-0 flex items-center">
+                            <a href="#" class="text-white text-lg font-semibold">
+                                <img src="/logo.png" class="w-12" alt="">
+                            </a>
+                        </div>
+                        <!-- Mobile menu button -->
+                        <div class="flex sm:hidden items-center">
+                            <button id="mobile-menu-button" class="text-white p-2 focus:outline-none">
+                                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M4 6h16M4 12h16m-7 6h7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                      
+                    </div>
+                </div>
+            
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="sm:hidden bg-transparent menu  hidden">
+                    <div class="px-2 pt-2 pb-3 space-y-1 justify-center flex items-center">
+                        <a href="#" class="text-white hover:bg-gray-600 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                        <a href="#" class="text-white hover:bg-gray-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                        <a href="#"
+                           class="text-white hover:bg-gray-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                        <a href="#"
+                           class="text-white hover:bg-gray-600 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Script to toggle mobile menu -->
+            <script>
+                document.getElementById('mobile-menu-button').addEventListener('click', function () {
+                    document.getElementById('mobile-menu').classList.toggle('hidden');
+                });
+            </script>
+            
+          <nav class="hidden md:mx-8 p-4 md:flex justify-between border-b-[0.3px] border-white/40 items-center">
+                        <div>
+                            <ul class="flex space-x-5">
+                                <li> <a href="" class=" text-[#4593e7] text-xl menu ">Home</a></li>
+                                <li> <a href="" class=" text-[#4593e7] text-xl menu">About</a></li>
+                                <li> <a href="" class=" text-[#4593e7] text-xl menu">Tokenomics</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <img src="/logo.png" class="w-12" alt="">
+                        </div>
+                        <div>
+                            <ul class="flex space-x-5">
+                                <li> <a href="" class="text-[#4593e7] text-xl menu">Roadmap</a></li>
+                                <li> <a href="" class=" text-[#4593e7] text-xl menu">Buy Now</a></li>
+                         
+                            </ul>
+                        </div>
+                        
+                           
+                    </nav> 
+             
+             
+                    <!-- <div class="grid grid-cols-2 py-12 place-items-center">
+                    <div>
+                        <h1 class="max-w-xl text-[2.9rem] leading-none text-[#4593e7]
+                        head text-center md:text-left mb-5
+                        ">Based Brad</h1>
+                    </div>
+                    <div>
+                        <img src="/logo.png" alt="">
+                    </div>
+                </div> -->
+                 <div class="py-5 p-4">
+                    <div class="container flex flex-wrap items-center justify-center mx-auto mt-10
+                    md:px-12 md:flex-row
+                    ">
+                    <div class="mb-14 lg:mb-0 lg:w-1/2">
+                        <h1 class="max-w-xl md:text-[75px] leading-none text-[#4593e7]
+                        head text-center md:text-left text-[50px] mb-5
+                        ">Based Brad</h1>
+                        <p class="max-w-xl text-[20px] text-center md:text-left texts tracking-wider md:text-[20px] text-white md:max-w-md">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, voluptate. Saepe, at.
+                        </p>
+                        <div class="my-4 flex justify-center md:justify-start items-center md:items-start">
+                            <a href="" class="border-[1px] text-center md:text-start border-blue-400 px-6 py-2 text-white menu text-2xl rounded-md">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="/logo.png" class="ml-auto" alt="">
+                    </div>
+                </div>
+                 </div>
+
+                 <div class="w-full items-center h-20 bg-blue-100">
+                    <div class="flex justify-evenly  items-center">
+                            <div class="my-3">
+                                <img src="https://cdn.worldvectorlogo.com/logos/dextools.svg" class="h-14" alt="">
+                            </div>
+                            <div class="">
+                                <img src="https://cdn.worldvectorlogo.com/logos/dextools.svg" class="h-14" alt="">
+                            </div>
+                            <div class="">
+                                <img src="https://cdn.worldvectorlogo.com/logos/dextools.svg" class="h-14" alt="">
+                            </div>
+                             
+
+                    </div>
+                 </div>
+
+        </section>
+
+
+        <section class="pt-3 p-4 bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
+                <div class="grid grid-cols-1 py-12 md:mx-12 md:grid-cols-2 place-items-center">
+                      
+                            <div>
+                                    <h1 class="max-w-xl md:text-[75px] leading-none text-[#4593e7]
+                                    head text-center md:text-left text-[40px] mb-5
+                                    ">WHO IS BRAD</h1>
+                                    <p class="max-w-xl text-center md:text-left texts tracking-wider text-[20px] text-white md:max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore. Ullam, nobis?</p>
+                                <br>
+                                    <p class="max-w-xl text-center md:text-left texts tracking-wider md:text-[20px] text-white md:max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore. Ullam, nobis?</p>
+                                    <div class="my-4 flex justify-center items-center  md:justify-start ">
+                                        <a href="" class="border-[1px] border-blue-400 px-6 py-2 bg-blue-950 text-white menu text-2xl rounded-md">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="/two.png" class="w-80" alt="">
+                        </div>
+                    </div>
+        </section>
+
+        <section class="py-6 p-4 bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
+                <div class="flex justify-center items-center p-4">
+                    <h1 class="head md:text-[50px] text-[40px] text-[#4593e7] head">TOKENOMICS</h1>
+                </div>
+                <div class="grid py-12 md:mx-12 grid-cols-1 md:grid-cols-2 place-items-center">
+                    <div>
+                        <h1 class="max-w-xl md:text-[30px] leading-none text-blue-100
+                        sub text-center md:text-left mb-5
+                        ">Token Allocation</h1>
+                        <p class="max-w-xl text-center md:text-left texts tracking-wider md:text-[20px] text-white md:max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore. Ullam, nobis?</p>
+                    <br>
+                        <p class="max-w-xl text-center md:text-left texts tracking-wider md:text-[20px] text-white md:max-w-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, labore. Ullam, nobis?</p>
+                        <div class="my-4 flex  justify-center items-center  md:justify-start ">
+                            <a href="" class="border-[1px] border-blue-400 px-6 py-2 bg-blue-950 text-white menu text-2xl rounded-md">Buy Now</a>
+                        </div>
+                    </div>
+                    <div>
+                                <img src="/two.png" class="w-80" alt="">
+                    </div>
+                       
+                </div>
+        </section>
+
+        <section class="py-6 p-4 bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
+        
+          
+                <div class="">
+                    <h1 class="text-4xl font-bold text-center head text-[#4593e7] p-4 text-[40px] md:text-[50px] mb-6">ROADMAP</h1>
+                    <p class="text-blue-100 text-center texts mb-12">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae tenetur consequuntur consequatur!
+                    </p>
+                            <div class="grid place-items-center grid-cols-1 md:grid-cols-2">
+                    <div class="space-y-12">
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-700 head text-white rounded-full flex items-center justify-center font-bold text-2xl">1</div>
+                            </div>
+                            <div class="flex-grow ml-4">
+                                <h2 class="text-[#4593e7] text-2xl sub font-bold mb-2">PHASE 1</h2>
+                                <ul class="list-none text-blue-100  space-y-2">
+                                    <li class="texts text-xl">🔘 Uniswap Launch</li>
+                                    <li class="texts text-xl">🔘 1,000+ Holders</li>
+                                    <li class="texts text-xl">🔘 CoinGecko/Coinmarketcap</li>
+                                    <li class="texts text-xl">🔘 Lottery Dapp</li>
+                                    <li class="texts text-xl">🔘 Core community members group</li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-700 head text-white rounded-full flex items-center justify-center font-bold text-2xl">2</div>
+                            </div>
+                            <div class="flex-grow ml-4">
+                                <h2 class="text-[#4593e7] sub font-bold mb-2">PHASE 2</h2>
+                                <ul class=" list-none text-blue-100 space-y-2">
+                                    <li class="texts text-xl">🔘 KOL Marketing</li>
+                                    <li class="texts text-xl">🔘 Meme Contest</li>
+                                    <li class="texts text-xl">🔘 Lottery Dapp</li>
+                                    <li class="texts text-xl">🔘 1000+ KEK Sacrifices</li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="w-16 h-16 bg-blue-700 head text-white rounded-full flex items-center justify-center font-bold text-2xl">3</div>
+                            </div>
+                            <div class="flex-grow ml-4">
+                                <h2 class="text-[#4593e7] sub font-bold mb-2">PHASE 3</h2>
+                                <ul class="text-blue-100 list-none space-y-2">
+                                    <li class="texts text-xl">🔘 Partnerships</li>
+                                    <li class="texts text-xl">🔘 Governance NFT Collection</li>
+                                    <li class="texts text-xl">🔘 KEK Merch</li>
+                                    <li class="texts text-xl">🔘 Lottery Dapp</li>
+                                    <li class="texts text-xl">🔘 MEME Community Partnerships</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div>
+                            <img src="/two.png" class="w-80" alt="">
+                        </div>
+
+                </div>
+                </div>
+            
+           
+            </div>
+            
+    </section>
+
+</body>
+</html>
