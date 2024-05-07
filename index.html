@@ -6,6 +6,8 @@
     <title>Based Brad</title>
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <style>
     @font-face {
@@ -120,12 +122,36 @@
                         <img src="/logo.png" alt="">
                     </div>
                 </div> -->
-                 <div class="py-5 p-4">
+                <style>
+                    @keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce-in-down {
+  animation: bounceInDown 1s ease;
+}
+
+                </style>
+                 <div class="py-5 p-4"  data-aos="fade-up"
+                 data-aos-duration="1000">
                     <div class="container flex flex-wrap items-center justify-center mx-auto mt-10
                     md:px-12 md:flex-row
                     ">
                     <div class="mb-14 lg:mb-0 lg:w-1/2">
-                        <h1 class="max-w-xl md:text-[75px] leading-none text-[#4593e7]
+                        <h1 class="max-w-xl md:text-[75px] bounce-in-down leading-none text-[#4593e7]
                         head text-center md:text-left text-[50px] mb-5
                         ">Based Brad</h1>
                         <p class="max-w-xl text-[20px] text-center md:text-left texts tracking-wider md:text-[20px] text-white md:max-w-md">
@@ -161,7 +187,8 @@
 
 
         <section class="pt-3 p-4 bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
-                <div class="grid grid-cols-1 py-12 md:mx-12 md:grid-cols-2 place-items-center">
+                <div class="grid grid-cols-1 py-12 md:mx-12 md:grid-cols-2 place-items-center"  data-aos="fade-up"
+                data-aos-duration="3000">
                       
                             <div>
                                     <h1 class="max-w-xl md:text-[75px] leading-none text-[#4593e7]
@@ -178,20 +205,23 @@
                                         <a href="" class="border-[1px] border-blue-400 px-6 py-2 bg-blue-950 text-white menu text-2xl rounded-md">Buy Now</a>
                                     </div>
                                 </div>
-                                <div>
+                                <div  data-aos="fade-up"
+                                data-aos-duration="1000">
                                     <img src="/two.png" class="w-80" alt="">
                         </div>
                     </div>
         </section>
 
         <section class="py-6 p-4 bg-[url('/bg-2.png')] bg-no-repeat bg-cover w-screen">
-                <div class="flex justify-center items-center p-4">
-                    <h1 class="head md:text-[50px] text-[40px] text-[#4593e7] head">TOKENOMICS</h1>
+                <div class="flex justify-center items-center p-4"  data-aos="fade-up"
+                data-aos-duration="1000">
+                    <h1 class="head md:text-[50px] text-[50px] text-[#4593e7] head">TOKENOMICS</h1>
                 </div>
-                <div class="grid py-12 md:mx-12 grid-cols-1 md:grid-cols-2 place-items-center">
-                    <div>
+                <div class="grid py-3 md:mx-12 grid-cols-1 md:grid-cols-2 place-items-center">
+                    <div  data-aos="fade-left"
+                    data-aos-duration="2000">
                         <h1 class="max-w-xl md:text-[30px] leading-none text-blue-100
-                        sub text-center md:text-left mb-5
+                        sub text-center md:text-left mb-3
                         ">Token Allocation</h1>
                         <p class="max-w-xl text-center md:text-left texts tracking-wider
                          md:text-[20px] text-white md:max-w-md">Total Supply – 1,000,000,000</p>
@@ -232,14 +262,14 @@
                 <h1 class="head md:text-[50px] text-[40px] text-[#4593e7] head">HOW TO BUY</h1>
             </div>
             <div class="grid py-12 md:mx-12 grid-cols-1 gap-8 md:grid-cols-4 place-items-center">
-                    <div class="bg-blue-800 flex w-80  h-56 flex-col p-3 rounded-2xl text-center justify-center items-center">
+                    <div data-aos="flip-up" class="bg-blue-800 flex w-80  h-56 flex-col p-3 rounded-2xl text-center justify-center items-center">
                             <h1 class="sub text-white">Download & setup MetaMask or TrustWallet</h1>
                             <p class="texts text-white py-4">
                                 Download MetaMask or TrustWallet chrome extentions. <br>
                             Add Base Mainnet network to wallet (Follow steps here https://docs.base.org/docs/using-base/)
                             </p>
                     </div>
-                    <div class="bg-blue-800 flex w-80  h-56 flex-col p-3 rounded-2xl text-center justify-center items-center">
+                    <div data-aos="flip-down" class="bg-blue-800 flex w-80  h-56 flex-col p-3 rounded-2xl text-center justify-center items-center">
                         <h1 class="sub text-white">Buy and send base eth to MetaMask
                         </h1>
                         <p class="texts text-white py-4">
@@ -247,14 +277,14 @@
                             Transfer the ETH to your MetaMask wallet address; select Base as network.
                         </p>
                 </div>
-                <div class="bg-blue-800 flex flex-col w-80 h-56 p-3 rounded-2xl text-center justify-center items-center">
+                <div data-aos="flip-up" class="bg-blue-800 flex flex-col w-80 h-56 p-3 rounded-2xl text-center justify-center items-center">
                     <h1 class="sub text-white">Head to Uniswap
                     </h1>
                     <p class="texts text-white py-4">
                         On Uniswap swap ETH to $Brad.
                     </p>
             </div>
-            <div class="bg-blue-800 flex flex-col w-80 h-56 p-3 rounded-2xl text-center justify-center items-center">
+            <div data-aos="flip-down" class="bg-blue-800 flex flex-col w-80 h-56 p-3 rounded-2xl text-center justify-center items-center">
                 <h1 class="sub text-white">HODL
                 </h1>
                 <p class="texts text-white py-4">
@@ -343,6 +373,9 @@
             </div>
             
     </section> -->
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
